@@ -1,5 +1,6 @@
 import requests
 import datetime
+import os
 from flight_data import FlightData
 
 SEARCH_ENDPOINT = "https://tequila-api.kiwi.com/v2/search"

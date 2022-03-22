@@ -10,7 +10,7 @@ HEADERS = {
 ENDPOINT = "https://api.sheety.co/13eea4da04d7a3ea3019f72c28082354/flightDeals/prices"
 
 class DataManager:
-    #This class is responsible for talking to the Google Sheet.
+
     def __init__(self):
         self.destination_data = {}
 

@@ -10,6 +10,7 @@ sheet_data = data_manager.get_destination_data()
 flight_search = FlightSearch()
 notification_manager = NotificationManager()
 
+# We are looking for flights departing from London
 ORIGIN_CITY_IATA = "LON"
 
 if sheet_data[0]["iataCode"] == "":
