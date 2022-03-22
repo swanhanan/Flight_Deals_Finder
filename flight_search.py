@@ -4,7 +4,7 @@ from flight_data import FlightData
 
 SEARCH_ENDPOINT = "https://tequila-api.kiwi.com/v2/search"
 TEQUILA_ENDPOINT = "https://tequila-api.kiwi.com/locations/query"
-TEQUILA_API_KEY = "nIeNfPTiN1-I9dbhg_IszlEpmFBcVAQ4"
+TEQUILA_API_KEY = os.environ.get('TEQUILA_API_Key')
 
 
 class FlightSearch:

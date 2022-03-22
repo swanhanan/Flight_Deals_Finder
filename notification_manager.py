@@ -1,10 +1,11 @@
 
 from twilio.rest import Client
+import os
 
 TWILIO_SD = "AC2aa8b84eb0d70d00cbbe48c4e84237b0"
-TWILIO_AUTH_TOKEN = "6622c493665973cdbadf05a868494fbc"
-TWILIO_VIR_NUM = "+13344633217"
-TWILIO_VERIFIED_NUM = "+447515592234"
+TWILIO_AUTH_TOKEN = os.environ.get('API_TOKEN')
+TWILIO_VIR_NUM = "+1xxxxxxxx"
+TWILIO_VERIFIED_NUM = "+44xxxxxxx"
 
 
 class NotificationManager:

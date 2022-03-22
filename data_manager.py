@@ -1,6 +1,8 @@
 import requests
+import os
 from pprint import pprint
-TOKEN = "SWANFLY"
+TOKEN = os.environ.get('SHEETY_API_Key')
+
 HEADERS = {
             "Authorization": f"Bearer {TOKEN}",
             "Content-Type": "application/json"
@@ -34,7 +36,7 @@ class DataManager:
 
     def get_customer_emails(self):
         customers_endpoint = "https://api.sheety.co/13eea4da04d7a3ea3019f72c28082354/flightDeals/users"
-        HEADERS = {"Authorization": f"Bearer SWANFLY"}
+        HEADERS = {"Authorization": f"Bearer {TOKEN}"}
         response = requests.get(customers_endpoint, headers=HEADERS)
         data = response.json()
         self.customer_data = data["users"]
